@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nushell-docset"
+version = "1.0.0"
+description = "Generate Dash docsets for Nushell documentation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "nushell-docset contributors"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "markdown>=3.4.0",
+]
+
+[project.scripts]
+nushell-docset = "generate_docset:main"
+nushell-docset-release = "build_release:main"
+
+[project.urls]
+Homepage = "https://github.com/nushell/nushell.github.io"
+Repository = "https://github.com/nushell/nushell.github.io"
+
+[tool.setuptools]
+py-modules = ["generate_docset", "build_release"]
