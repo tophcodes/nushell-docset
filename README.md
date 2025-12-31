@@ -4,6 +4,8 @@ Generates [Dash](https://kapeli.com/dash) / [Zeal](https://zealdocs.org/) docset
 
 !! Still work in progress at this moment.
 
+Still todo: The flake output should not need to depend on devshell, so it needs to be built using pure Nixpkgs.
+
 ### Using Nix Shell for Development
 
 ```bash
@@ -13,6 +15,7 @@ python generate_docset.py --help
 #
 nix build
 ```
+
 ## Installing the Generated Docset
 
 ### Dash (macOS)

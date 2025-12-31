@@ -34,5 +34,8 @@ nushell-docset-release = "build_release:main"
 Homepage = "https://github.com/nushell/nushell.github.io"
 Repository = "https://github.com/nushell/nushell.github.io"
 
+[tool.poetry]
+name = "nushell-docset"
+
 [tool.setuptools]
 py-modules = ["generate_docset", "build_release"]
